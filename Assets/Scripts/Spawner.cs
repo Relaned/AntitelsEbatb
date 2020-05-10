@@ -18,7 +18,7 @@ public class Spawner : MonoBehaviour
     }
     IEnumerator SpawnCoolDown()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(6);
         Instantiate(Entity, SpawnPosition.position, Quaternion.identity);
         Repeat();
     }
